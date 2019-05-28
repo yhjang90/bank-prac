@@ -46,40 +46,28 @@ $(".bot-btn li").hover(function(){
 
 /* 메인 배너 롤링 */
 /* 배너 넘버 클릭 시 해당 번호의 배너 이미지 노출*/
-$('.banner-indicator li').click(function(){
-    var bannerIndex = $(this).index();
-    $(".banner-content-list li").css({"display" : "none"});
-    $(".banner-content-list li:eq(" + bannerIndex + ")").css({"display" : "block"});
-});
-/**
-bannerSlide();
-function bannerSlide(){
-    var bannerIndex = $(".banner-content-list li").length - 1;
-    for(var int = 0; bannerIndex >= int; int++){
-        console.log(int);
-            console.log(int);
-            $(".banner-content-list li").delay(3000).css({"display" : "none"});
-            $(".banner-content-list li:eq(" + int+1 + ")").delay(3000).css({"display" : "block"});
-        }
-};
- */
-
-function recursive(i) {
-    var bannerIndex = $(".banner-content-list li").length - 1;
-    if (bannerIndex >= i) {
-        setTimeout(function() {
-            console.log(i)
-            $(".banner-content-list li").css({"display" : "none"});
-            $(".banner-content-list li:eq(" + i + ")").css({"display" : "block"});
-            i++;
-            recursive(i)  
-        }, i == 0 ? 0 : 3000)
-    }
-}
-recursive(0);
+// $('.banner-indicator li').click(function(){
+//     var bannerIndex = $(this).index();
+//     $(".banner-content-list li").css({"display" : "none"});
+//     $(".banner-content-list li:eq(" + bannerIndex + ")").css({"display" : "block"});
+// });
 
 
+// var $imgList = $('.banner-content-list > li');
+// var nImgCount = $imgList.length;	// 위에서 가져온 li의 개수
+// var nDuration = 3000;					// 이미지를 변경할 시간
+// var bAuto = true;						// 자동으로 변경할 지 여부
+// var nIndex = 0;						// 변경할 이미지의 Index
 
+// if(bAuto == true) {
+// 	setInterval(autoSlide, nDuration);		// Javascript setInterval 함수 호출
+// }
 
+// function autoSlide() {
+//     var bannerSum = $("banner-content-list .banner-content-item").each();
+//     console.log(bannerSum);
 
-
+// 	var next = (++nIndex % nImgCount);
+// 	$($imgList.get(next - 1)).fadeOut(1000);
+//     $($imgList.get(next)).fadeIn(1000);
+// }

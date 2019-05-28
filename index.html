@@ -7,15 +7,20 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script> 
+
     <title>KDB 산업은행</title>
 </head>
 <body>
     <div class="skip">
         <a href="#section0">With KDB 바로가기</a>
+        <a href="#section2">News & Event 바로가기</a>
+        <a href="#section3">Special KDB 바로가기</a>
     </div>
 
-    <section id="section0">
-        <h3 class="blind">With KDB컨텐츠 내용시작</h3>
+    
         <header>
             <div class="header-top-wrap">
                 <div class="header-top clear">
@@ -75,215 +80,386 @@
                 </nav>
             </div>
         </header>
-    
-        <div class="section-wrap" id="contents">
-            <div class="section-list">
-                <nav class="section-menu">
-                    <ul class="scroll-menu-list">
-                        <li><a href="#"><span>With KDB</span></a></li>
-                        <li><a href="#"><span>News & Event</span></a></li>
-                        <li><a href="#"><span>Special KDB</span></a></li>
-                        <li><a href="#"><span>기업금융정보</span></a></li>
-                    </ul>
-                </nav>
+        <section id="section0">
+            <h3 class="blind">With KDB컨텐츠 내용시작</h3>
+            <div class="section-wrap" id="contents">
+                <div class="section-list">
+                    <nav class="section-menu">
+                        <ul class="scroll-menu-list">
+                            <li><a href="#"><span>With KDB</span></a></li>
+                            <li><a href="#"><span>News & Event</span></a></li>
+                            <li><a href="#"><span>Special KDB</span></a></li>
+                            <li><a href="#"><span>기업금융정보</span></a></li>
+                        </ul>
+                    </nav>
 
-                <div class="main-banner-wrap">
-                    <ul class="banner-indicator clear">
-                        <li><div class="num-effec"><a href="#">01</a></div></li>
+                    <div class="main-banner-wrap">
+                        <ul class="banner-indicator clear">
+                            <li><div class="num-effec"><a href="#">01</a></div></li>
 
-                        <li><div class="num-effec"><a href="#">02</a></div></li>
+                            <li><div class="num-effec"><a href="#">02</a></div></li>
 
-                        <li><div class="num-effec"><a href="#">03</a></div></li>
+                            <li><div class="num-effec"><a href="#">03</a></div></li>
 
-                        <li><div class="num-effec"><a href="#">04</a></div></li>
+                            <li><div class="num-effec"><a href="#">04</a></div></li>
 
-                        <li><div class="num-effec"><a href="#">05</a></div></li>
-                    </ul>
+                            <li><div class="num-effec"><a href="#">05</a></div></li>
+                        </ul>
 
-                    <ul class="banner-content-list" id="slider">
-                        <li class="banner-content-item">
-                            <div class="banner-content">
-                                <span>언제나 고객님과 함께하는 KDB산업은행이</span>
-                                <strong>
-                                    새로운 모습으로 <br>
-                                    여러분을 만납니다.
-                                </strong>
-                                <p>
-                                    편리해지고 스마트해진 인터넷뱅킹과 스마트폰뱅킹을 만나보세요!
-                                </p>
-                            </div>
-                            <div class="main-bg-banner">
-                                    <img src="images/visual_1.jpg" alt="banner image">
-                            </div>
-                        </li>
-                        <li class="banner-content-item" style="display:none;">
-                            <div class="banner-content">
-                                <strong>
-                                    혁신성장 선도
-                                </strong>
+                        <ul class="banner-content-list" id="slider">
+                            <li class="banner-content-item">
+                                <div class="banner-content">
+                                    <span>언제나 고객님과 함께하는 KDB산업은행이</span>
+                                    <strong>
+                                        새로운 모습으로 <br>
+                                        여러분을 만납니다.
+                                    </strong>
+                                    <p>
+                                        편리해지고 스마트해진 인터넷뱅킹과 스마트폰뱅킹을 만나보세요!
+                                    </p>
+                                </div>
+                                <div class="main-bg-banner">
+                                        <img src="images/visual_1.jpg" alt="banner image">
+                                </div>
+                            </li>
+                            <li class="banner-content-item" style="display:none;">
+                                <div class="banner-content">
+                                    <strong>
+                                        혁신성장 선도
+                                    </strong>
 
-                                <p>
-                                    기업금융 전문은행으로서<br>
-                                    혁신기업의 성장을 지원하고 미래형 신산업을 육성하여<br>
-                                    4차 산업혁명 중심의 산업구조 변화를 선도합니다.
-                                </p>
-                            </div>
-                            <div class="main-bg-banner">
-                                    <img src="images/visual_2.jpg" alt="banner image">
-                            </div>
-                        </li>
-                        <li class="banner-content-item" style="display:none;">
-                            <div class="banner-content">
-                                <strong>
-                                    중소·중견기업 <br>
-                                    육성 주도
-                                </strong>
+                                    <p>
+                                        기업금융 전문은행으로서<br>
+                                        혁신기업의 성장을 지원하고 미래형 신산업을 육성하여<br>
+                                        4차 산업혁명 중심의 산업구조 변화를 선도합니다.
+                                    </p>
+                                </div>
+                                <div class="main-bg-banner">
+                                        <img src="images/visual_2.jpg" alt="banner image">
+                                </div>
+                            </li>
+                            <li class="banner-content-item" style="display:none;">
+                                <div class="banner-content">
+                                    <strong>
+                                        중소·중견기업 <br>
+                                        육성 주도
+                                    </strong>
 
-                                <p>
-                                    한국경제의 중추인 중소·중견기업의<br>
-                                    동반성장 파트너로서 맞춤형 솔루션을 제공하고<br>
-                                    ‘중소-중견-대기업’으로 이어지는 성장의 선순환 생태계를 조성합니다.
-                                </p>
-                            </div>
-                            <div class="main-bg-banner">
-                                    <img src="images/visual_3.jpg" alt="banner image">
-                            </div>
-                        </li>
-                        <li class="banner-content-item" style="display:none;">
-                            <div class="banner-content">
-                                <strong>
-                                    글로벌 금융시장 개척
-                                </strong>
+                                    <p>
+                                        한국경제의 중추인 중소·중견기업의<br>
+                                        동반성장 파트너로서 맞춤형 솔루션을 제공하고<br>
+                                        ‘중소-중견-대기업’으로 이어지는 성장의 선순환 생태계를 조성합니다.
+                                    </p>
+                                </div>
+                                <div class="main-bg-banner">
+                                        <img src="images/visual_3.jpg" alt="banner image">
+                                </div>
+                            </li>
+                            <li class="banner-content-item" style="display:none;">
+                                <div class="banner-content">
+                                    <strong>
+                                        글로벌 금융시장 개척
+                                    </strong>
 
-                                <p>
-                                    투자개발형 해외PF금융,<br>
-                                    국제기구와의 공동사업 발굴 등<br>
-                                    해외 新시장을 개척하고 국내기업의 해외진출을 적극 지원합니다.
-                                </p>
-                            </div>
-                            <div class="main-bg-banner">
-                                    <img src="images/visual_4.jpg" alt="banner image">
-                            </div>
-                        </li>
-                        <li class="banner-content-item" style="display:none;">
-                            <div class="banner-content">
-                                <strong>
-                                    사회적 역할 제고
-                                </strong>
+                                    <p>
+                                        투자개발형 해외PF금융,<br>
+                                        국제기구와의 공동사업 발굴 등<br>
+                                        해외 新시장을 개척하고 국내기업의 해외진출을 적극 지원합니다.
+                                    </p>
+                                </div>
+                                <div class="main-bg-banner">
+                                        <img src="images/visual_4.jpg" alt="banner image">
+                                </div>
+                            </li>
+                            <li class="banner-content-item" style="display:none;">
+                                <div class="banner-content">
+                                    <strong>
+                                        사회적 역할 제고
+                                    </strong>
 
-                                <p>
-                                    대표 정책금융기관으로서<br>
-                                    사회적 금융의 체계적 추진을 통해<br>
-                                    기업의 사회적 책임 이행을 유도하고 상생과 협력을 촉진합니다.
-                                </p>
-                            </div>
-                            <div class="main-bg-banner">
-                                    <img src="images/visual_5.jpg" alt="banner image">
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="direct-menu">
-                    <div class="direct-menu-inner">
-                        <ul class="top-btn clear">
-                                <li class="top-login-btn">
+                                    <p>
+                                        대표 정책금융기관으로서<br>
+                                        사회적 금융의 체계적 추진을 통해<br>
+                                        기업의 사회적 책임 이행을 유도하고 상생과 협력을 촉진합니다.
+                                    </p>
+                                </div>
+                                <div class="main-bg-banner">
+                                        <img src="images/visual_5.jpg" alt="banner image">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="direct-menu">
+                        <div class="direct-menu-inner">
+                            <ul class="top-btn clear">
+                                    <li class="top-login-btn">
+                                        <a href="#">
+                                        <i class="login-icon"></i>
+                                        <span>로그인</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        <span>인증센터</span>
+                                        </a>
+                                    </li>
+                            </ul> 
+                            <ul class="bot-btn">
+                                <li>
                                     <a href="#">
-                                    <i class="login-icon"></i>
-                                    <span>로그인</span>
+                                        <div class="bot-btn-item">
+                                            <i class="quick-icon acc"></i>
+                                            <span>계좌조회</span>
+                                        </div>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                    <span>인증센터</span>
+                                        <div class="bot-btn-item">
+                                            <i class="quick-icon move"></i><span>이체</span>
+                                        </div>
                                     </a>
                                 </li>
-                        </ul> 
-                        <ul class="bot-btn">
+                                <li>
+                                    <a href="#">
+                                        <div class="bot-btn-item">
+                                            <i class="quick-icon new-acc"></i><span>예금신규</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="bot-btn-item">
+                                            <i class="quick-icon card"></i><span>카드신청</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="bot-btn-item">
+                                            <i class="quick-icon quick-search"></i><span>빠른조회</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="bot-btn-item">
+                                            <i class="quick-icon customer-pro"></i><span>금융소비자보호</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="notice-wrap">
+                        <div class="scroll-guide">
+                            <span>Scroll</span>
+                            <i class="scroll-guide-icon"></i>
+                        </div>
+                        <div class="notice-content clear">
+                            <div class="notice-left clear">
+                                <div class="notoce-tit"><a href="#"><span>새소식</span></a></div>
+                                <ul class="notoce-list">
+                                    <li class="clear">   
+                                        <a href="#"><div class="notice-content">KDB산업은행이 새로운 모습으로 여러분여러분여러분</div></a>
+                                        <div class="notoce-date">2019-05-07</div>
+                                    </li>
+                                    <li class="clear">
+                                        <a href="#"><div class="notice-content">KDB산업은행이 새로운 모습으로 러분여러분여러분</div></a>
+                                        <div class="notoce-date">2019-05-07</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="notice-right clear">
+                                <div class="notoce-tit"><a href="#"><span>입찰공고</span></a></div>
+                                <ul class="notoce-list">
+                                    <li class="clear">
+                                        <a href="#"><div class="notice-content">2019년 정보화사업 원가계산용역 러분여러분여러분</div></a>
+                                        <div class="notoce-date">2019-05-14</div>
+                                    </li>
+                                    <li class="clear">
+                                        <a href="#"><div class="notice-content">2019년 정보화사업 원가계산용역 러분여러분여러분</div></a>
+                                        <div class="notoce-date">2019-05-14</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section1" class="second-section">
+            <h3 class="blind">NEWS & EVENT 컨텐츠 내용시작</h3>
+            <div class="second-section-wrap table-inner">
+            <div class="section-list news-section">
+                <h2 class="section-title">News & Event</h2>
+                
+                <div class="news-wrap clear"> 
+                    <div class="news-left-wrap">
+                        <strong><a href="#">공지사항</a></strong>
+                        <ul class="news-left-list">
+                            <li>
+                                <div class="news-left-content">
+                                    <a href="#">
+                                        텔레뱅킹 서비스 일시 순간중단(5/26 새벽) 안 순간중단(5/26 새벽) 안6 새벽) 안6 새벽) 안6 새벽) 안
+                                    </a>
+                                </div>
+                                <div class="news-left-date">
+                                    2019-05-24
+                                </div>
+                            </li>
+                            <li>
+                                <div class="news-left-content">
+                                    <a href="#">
+                                        구조화산금채 조기상환권 행사 공고 안내(5/26 0시~7시) 안내(5/26 0시~7시)
+                                    </a>
+                                </div>
+                                <div class="news-left-date">
+                                    2019-05-24
+                                </div>
+                            </li>
+                            <li>
+                                <div class="news-left-content">
+                                    <a href="#">
+                                        구조화산금채 조기상환권 행사 공고 안내(5/26 0시~7시) 안내(5/26 0시~7시)
+                                    </a>
+                                </div>
+                                <div class="news-left-date">
+                                    2019-05-24
+                                </div>
+                            </li>
+                            <li>
+                                <div class="news-left-content">
+                                    <a href="#">
+                                        산금채 조기상환권 행사 공고
+                                    </a>
+                                </div>
+                                <div class="news-left-date">
+                                    2019-05-24
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="news-right-wrap">
+                        <div class="news-right-top">
+                            <strong><a href="#">입찰&채용</a></strong>
+                            <ul class="news-right-list">
+                                <li>
+                                    <div class="news-right-content">
+                                        <a href="#">
+                                            채용홈페이지 접속중단 안내(5/26 0시~7시) 안내(5/26 0시~7시)
+                                        </a>
+                                    </div>
+                                    <div class="news-right-date">
+                                        2019-05-24
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="news-right-content">
+                                        <a href="#">
+                                            2020년도 캘린더 및 연하장 디자인 기획 및 제 안내(5/26 0시~7시) 안내(5/26 0시~7시)
+                                        </a>
+                                    </div>
+                                    <div class="news-right-date">
+                                        2019-05-24
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="news-right-bot">
+                            <strong><a href="#">보안소식</a></strong>
+                            <ul class="news-right-list">
+                                <li>
+                                    <div class="news-right-content">
+                                        <a href="#">
+                                            제로페이 결제 스미싱 문자 주의 안내 안내(5/26 0시~7시) 안내(5/26 0시~7시)
+                                        </a>
+                                    </div>
+                                    <div class="news-right-date">
+                                        2019-05-24
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="news-right-content">
+                                        <a href="#">
+                                            「보이스피싱 제로(Zero) 캠페인」그놈목소리  안내(5/26 0시~7시) 안내(5/26 0시~7시)
+                                        </a>
+                                    </div>
+                                    <div class="news-right-date">
+                                        2019-05-24
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+
+                    <div class="news-center">
+                        <img src="images/eb01.png" alt="">
+                    </div> 
+                </div>
+
+                <div class="news-bottom clear">
+                    <div class="news-menu">
+                        <i class="bold-icon">
+
+                        </i>
+                        <ul class="news-menu-list clear">
                             <li>
                                 <a href="#">
-                                    <div class="bot-btn-item">
-                                        <i class="quick-icon acc"></i>
-                                        <span>계좌조회</span>
-                                    </div>
+                                    경영공시
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <div class="bot-btn-item">
-                                        <i class="quick-icon move"></i><span>이체</span>
-                                    </div>
+                                    상품공시
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <div class="bot-btn-item">
-                                        <i class="quick-icon new-acc"></i><span>예금신규</span>
-                                    </div>
+                                    윤리경영
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <div class="bot-btn-item">
-                                        <i class="quick-icon card"></i><span>카드신청</span>
-                                    </div>
+                                    정보공개
                                 </a>
+                                <i class="drop-menu">
+
+                                </i>
                             </li>
+                        </ul>
+                    </div>
+                    <div class="news-banner">
+                        <ul class="news-banner-indicator clear">
+                            <li><a href="#"><img src="" alt=""></a></li>
+                            <li><a href="#"><img src="" alt=""></a></li>
+                            <li><a href="#"><img src="" alt=""></a></li>
+                            <li><a href="#"><img src="" alt=""></a></li>
+                            <li><a href="#"><img src="" alt=""></a></li>
+                            <li><a href="#"><img src="" alt=""></a></li>
+                            <li><a href="#"><img src="" alt=""></a></li>
+                        </ul>
+                        <ul class="news-banner-list">
                             <li>
                                 <a href="#">
-                                    <div class="bot-btn-item">
-                                        <i class="quick-icon quick-search"></i><span>빠른조회</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="bot-btn-item">
-                                        <i class="quick-icon customer-pro"></i><span>금융소비자보호</span>
-                                    </div>
+                                    <img src="images/20190513_001.jpg" alt="">
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                
-                <div class="notice-wrap">
-                    <div class="scroll-guide">
-                        <span>Scroll</span>
-                        <i class="scroll-guide-icon"></i>
-                    </div>
-                    <div class="notice-content clear">
-                        <div class="notice-left clear">
-                            <div class="notoce-tit"><a href="#"><span>새소식</span></a></div>
-                            <ul class="notoce-list">
-                                <li class="clear">   
-                                    <a href="#"><div class="notice-content">KDB산업은행이 새로운 모습으로 여러분여러분여러분</div></a>
-                                    <div class="notoce-date">2019-05-07</div>
-                                </li>
-                                <li class="clear">
-                                    <a href="#"><div class="notice-content">KDB산업은행이 새로운 모습으로 러분여러분여러분</div></a>
-                                    <div class="notoce-date">2019-05-07</div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="notice-right clear">
-                            <div class="notoce-tit"><a href="#"><span>입찰공고</span></a></div>
-                            <ul class="notoce-list">
-                                <li class="clear">
-                                    <a href="#"><div class="notice-content">2019년 정보화사업 원가계산용역 러분여러분여러분</div></a>
-                                    <div class="notoce-date">2019-05-14</div>
-                                </li>
-                                <li class="clear">
-                                    <a href="#"><div class="notice-content">2019년 정보화사업 원가계산용역 러분여러분여러분</div></a>
-                                    <div class="notoce-date">2019-05-14</div>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                    </div>
-                </div>
             </div>
         </div>
-    </section>
+        </section>
+        <section id="section2" class="special-section">
+            <h3 class="blind">Special KDB 컨텐츠 내용시작</h3>
+            <div class="special-section-wrap"></div>
+            <div class="section-list"></div>
+        </section>
     <script src="index.js"></script>
 </body>
 </html>
