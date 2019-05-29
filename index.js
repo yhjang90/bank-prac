@@ -71,3 +71,15 @@ $(".bot-btn li").hover(function(){
 // 	$($imgList.get(next - 1)).fadeOut(1000);
 //     $($imgList.get(next)).fadeIn(1000);
 // }
+
+
+/* 정보공개 버튼 클릭 시 노출 메뉴 */
+$(".news-menu-list .popup-open").click(function(){
+    $(".disclosure-popup-wrap").css({"display":"block"});
+    $(".drop-menu:before").css({"border-top": "5px solid rgba(0,0,0,0)", "border-bottom": "5px solid rgba(102,102,102,1)"});
+})
+$(".close-btn a").click(function(){
+    $(".disclosure-popup-wrap").css({"display":"none"});
+})
+
+
