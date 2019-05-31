@@ -74,12 +74,47 @@ $(".bot-btn li").hover(function(){
 
 
 /* 정보공개 버튼 클릭 시 노출 메뉴 */
-$(".news-menu-list .popup-open").click(function(){
-    $(".disclosure-popup-wrap").css({"display":"block"});
-    $(".drop-menu:before").css({"border-top": "5px solid rgba(0,0,0,0)", "border-bottom": "5px solid rgba(102,102,102,1)"});
-})
-$(".close-btn a").click(function(){
-    $(".disclosure-popup-wrap").css({"display":"none"});
+// $(".news-menu-list .popup-open").click(function(event){
+//     event.preventDefault();
+//     $(".disclosure-popup-wrap").css({"display":"block"});
+//     $(".drop-menu:before").css({"border-top": "5px solid rgba(0,0,0,0)", "border-bottom": "5px solid rgba(102,102,102,1)"});
+// })
+// $(".close-btn a").click(function(){
+//     event.preventDefault();
+//     $(".disclosure-popup-wrap").css({"display":"none"});
+// })
+
+$(".tooltip-btn").on("click", function(e){
+    e.preventDefault();
+    var $this = $(this);
+    var target = $this.attr("href");
+    
+    if(!$this.hasClass("open")){
+        tooltipControl("open", $this, $(target));
+    }else{
+        tooltipControl("close", $this, $(target));
+    }
+
+    // (!$this.hasClass("open")) ? tooltipControl("open") : tooltipControl("close");
+    
+
 })
 
+function tooltipControl(status, $el, $target){
+    if( status == "open"){
+        $el.addClass("open");
+        $target.css({"display":"block"});
+    }else if(status == "close"){
+        $el.removeClass("open");
+        $target.css({"display":"none"});
+    }
+}
+
+$(".tooltip-wrap .close-btn").on("click", function(e){
+    e.preventDefault();
+    var tooltipWrap = $(this).parent(".tooltip-wrap")
+    var tooltipId = "#" + tooltipWrap.attr("id");
+    tooltipWrap.css({"display":"none"});
+    $(".tooltip-btn[href='"+ tooltipId +"']").removeClass("open");
+})
 
