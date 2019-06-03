@@ -84,6 +84,8 @@ $(".bot-btn li").hover(function(){
 //     $(".disclosure-popup-wrap").css({"display":"none"});
 // })
 
+
+// 정보공개 메뉴 클릭 시 노출되는 툽팁팝업
 $(".tooltip-btn").on("click", function(e){
     e.preventDefault();
     var $this = $(this);
@@ -94,12 +96,8 @@ $(".tooltip-btn").on("click", function(e){
     }else{
         tooltipControl("close", $this, $(target));
     }
-
-    // (!$this.hasClass("open")) ? tooltipControl("open") : tooltipControl("close");
-    
-
+ // (!$this.hasClass("open")) ? tooltipControl("open") : tooltipControl("close");
 })
-
 function tooltipControl(status, $el, $target){
     if( status == "open"){
         $el.addClass("open");
@@ -109,12 +107,69 @@ function tooltipControl(status, $el, $target){
         $target.css({"display":"none"});
     }
 }
-
 $(".tooltip-wrap .close-btn").on("click", function(e){
     e.preventDefault();
     var tooltipWrap = $(this).parent(".tooltip-wrap")
     var tooltipId = "#" + tooltipWrap.attr("id");
     tooltipWrap.css({"display":"none"});
     $(".tooltip-btn[href='"+ tooltipId +"']").removeClass("open");
+})
+
+
+
+
+// Special KDB의 카드배너 좌우 이동 버튼
+$(".spcial-banner-wrap .right-btn").on("click", function(){
+    var cardLength = $(".rolling-banner li").length;
+    var cardWidth = $(".rolling-banner li").outerWidth();
+    var bannerPosi = $(".rolling-banner").position().left;
+    if( - (bannerPosi - cardWidth * 4) <= (cardWidth * cardLength)){
+    $(".rolling-banner").stop().animate({"left": bannerPosi - cardWidth}, 300);
+    $(".right-btn button").css({"cursor":"pointer"});
+}
+else{
+    $(".right-btn button").css({"cursor":"default"});
+}
+})
+
+$(".spcial-banner-wrap .left-btn").on("click", function(){
+    var cardLength = $(".rolling-banner li").length;
+    var cardWidth = $(".rolling-banner li").outerWidth();
+    var bannerPosi = $(".rolling-banner").position().left;
+    if( - (bannerPosi - cardWidth * 5) >= (cardWidth * cardLength)){
+    $(".rolling-banner").stop().animate({"left": bannerPosi + cardWidth}, 300);
+    $(".left-btn button").css({"cursor":"pointer"});
+}
+else{
+    $(".left-btn button").css({"cursor":"default"});
+}
+})
+
+
+// Special KDB의 메뉴배너의 좌우 이동 버튼
+$(".rolling-menu-wrap .right-btn").on("click", function(){
+    var cardLength = $(".rolling-menu li").length;
+    var cardWidth = $(".rolling-menu li").outerWidth();
+    var bannerPosi = $(".rolling-menu").position().left;
+    if( - (bannerPosi - cardWidth * 5) <= (cardWidth * cardLength)){
+    $(".rolling-menu").stop().animate({"left": bannerPosi - cardWidth}, 300);
+    $(".right-btn button").css({"cursor":"pointer"});
+}
+else{
+    $(".right-btn button").css({"cursor":"default"});
+}
+})
+
+$(".rolling-menu-wrap .left-btn").on("click", function(){
+    var cardLength = $(".rolling-menu li").length;
+    var cardWidth = $(".rolling-menu li").outerWidth();
+    var bannerPosi = $(".rolling-menu").position().left;
+    if( - (bannerPosi - cardWidth * 7) >= (cardWidth * cardLength)){
+    $(".rolling-menu").stop().animate({"left": bannerPosi + cardWidth}, 300);
+    $(".left-btn button").css({"cursor":"pointer"});
+}
+else{
+    $(".left-btn button").css({"cursor":"default"});
+}
 })
 
