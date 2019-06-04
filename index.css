@@ -280,8 +280,69 @@ section{height: calc(100% - 91px); width:100%; z-index: -1;}
 
 .rolling-menu-text{float: right; margin-top:7px; color:#666;}
 
+/* 기업금융정보 본문 시작 */
+.finance-section-wrap{background-color: #ccc;}
+.finance-section-wrap .section-list{position: relative;}
+.finance-section-wrap .section-list .people-obj{top:0; width:100%; height:100%;}
+.people-obj > div{position: absolute;}
+.people-obj .people0{top:300px; right: -140px;}
+.people-obj .people1{top:380px; left: 10px;}
+.people-obj .people2{top:420px; left: 90px;}
+.people-obj .people3{top:480px; left: -30px;}
+.people-obj .people4{top:450px; left: 55px;}
+.finance-section{text-align: center;}
+.finance-section .text-content{text-align: center;}
+.finance-section .text-content span{display: block; font-size: 18px;}
+.finance-section .text-content strong{font-size: 54px; line-height: 65px; margin-top:14px; display: inline-block;}
+.finance-section .text-content p{ line-height: 22px; color:#999; margin-top:26px;}
+.finance-section .finance-search{display: inline-block; margin-top:40px;}
+.finance-section .center-img{margin-top:30px;}
+.finance-search .input-wrap{float: left;}
+.finance-search .input-wrap .search{box-shadow: 10px 10px 30px 0 rgba(0,0,0,0.1); border: 0px; border-radius: 5px 0 0 5px;  width:537px; height:60px; padding:20px; box-sizing: border-box; font-size:16px; font-weight: 600; color: #666;}
+.finance-search .input-wrap .search::placeholder{color:#999;}
+.finance-search button .search-icon:before{content:""; display: inline-block; background: url(images/ico_search.png) no-repeat center center; width: 30px; height:26px; position: absolute; top:50%; left: 30px; transform: translateY(-50%);}
+.finance-search button{cursor: pointer; position: relative; background: url(images/btn_search_2.png) right 0; height: 60px; color:#fff; font-weight: 600; padding:0 20px 0 69px;}
 
-
-
+.finance-menu-wrap{position: relative; z-index: 1;}
+.finance-menu{margin-top:20px;}
+.finance-menu li + li{ padding-left:70px;}
+.finance-menu li{display: inline-block; vertical-align: top;}
+.icon-wrap > span{display: block; color:#666; font-weight: 600; line-height: 23px; margin-top:15px;}
+.icon-wrap .hexagon{position: relative; width: 86px; height: 90px;}
+.icon-wrap .hexagon .finance-icon:before{
+    content:""; 
+    display: inline-block; 
+    background: url(images/ico_info_0.png) no-repeat left 0; 
+    width:86px; 
+    height:90px; 
+    position: absolute; 
+    top:0; 
+    left: 0; 
+    z-index: 1;
+}
+.icon-wrap .hexagon > span{background-color: #fff; width:100%; height:38px; position: absolute; top:50%; left: 0; transform: translateY(-50%);}
+.icon-wrap .hexagon > span:before{
+    content: "";
+    display: inline-block;
+    background-color: #fff;
+    width: 54px;
+    height: 50px;
+    position: absolute;
+    top: -25px;
+    left: 16px;
+    transform: rotate(30deg) skew(-30deg);
+    border-radius: 10px;}
+.icon-wrap .hexagon > span:after{
+    content: "";
+    display: inline-block;
+    background-color: #fff;
+    width: 54px;
+    height: 50px;
+    position: absolute;
+    bottom: -24px;
+    left: 16px;
+    transform: rotate(31deg) skew(-30deg);
+    border-radius: 10px;
+}
 
 
